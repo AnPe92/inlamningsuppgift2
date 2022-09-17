@@ -25,7 +25,6 @@ waitForUsername.then((username) => {
         port: portA
     });
 
-
     socket.on('connect', () => {
         socket.write(`${username} har hoppat in i chatten.`);
     });
